@@ -1,3 +1,10 @@
+
+
+window.onload = function() {
+   console.log("Window has loaded.");
+   startInterval();
+};
+
 function simulateDelayedClick(x, y) {
       var clickEvent = new MouseEvent('click', {
         view: window,
