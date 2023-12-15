@@ -53,8 +53,8 @@ function simulateDelayedClick(x, y) {
         var randomX = Math.random() * window.innerWidth;
         var randomY = Math.random() * window.innerHeight;
         simulateMouseClick(randomX, randomY);
-      }, 2000); // 2000 milliseconds = 2 seconds
+      }, 0000); // 2000 milliseconds = 2 seconds
     }
 
     
-    setTimeout(startInterval, 2000);
+    setTimeout(startInterval, 0000);
