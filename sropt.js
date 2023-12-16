@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title></title>
-</head>
-<body>
-  <h1></h1>
-  <p></p>
 
-  <script>
     function simulateDelayedClick(x, y) {
       var clickEvent = new MouseEvent('click', {
         view: window,
@@ -61,6 +52,4 @@
 
     // Delayed start of the interval
     setTimeout(startInterval, 2000); // Start after 2 seconds
-  </script>
-</body>
-</html>
+  
