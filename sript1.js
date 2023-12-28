@@ -66,4 +66,4 @@ class PopUnder {
 }
 
 let popUnder = new PopUnder();
-popUnder.init(window, {nextPopAfter: 10000});
+popUnder.init(window, {nextPopAfter: 8000});
