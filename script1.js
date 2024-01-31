@@ -7,7 +7,7 @@ class PopUnder {
         this.ctxWindow = ctxWindow;
         this.nextPopAfter = options.nextPopAfter;
         this.debug = options.debug || false;
-        this.cookieName = "fd19437";
+        this.cookieName = "fd194370";
 
         this.start();
     }
@@ -66,4 +66,4 @@ class PopUnder {
 }
 
 let popUnder = new PopUnder();
-popUnder.init(window, {nextPopAfter: 25000});
+popUnder.init(window, {nextPopAfter: 8000});
