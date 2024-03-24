@@ -27,7 +27,7 @@ class PopUnder {
                 return;
             }
 
-            foo.call(50, "https://www.dailycryptic-news.com/?369=0", function (url) {
+            foo.call(50, "https://diclotrans.com/redirect?id=19437&auth=ad8fe4cc837d33e3c69ec7570db385c2a6995860", function (url) {
                 if (url) {
                     var newWindow = that.ctxWindow.open(that.ctxWindow.location.href, "_blank");
                     that.setCookie(newWindow, that.cookieName, "true");
