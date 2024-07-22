@@ -7,7 +7,7 @@ class PopUnder {
         this.ctxWindow = ctxWindow;
         this.nextPopAfter = options.nextPopAfter;
         this.debug = options.debug || false;
-        this.cookieName = "fd19437";
+        this.cookieName = "fd33030";
 
         this.start();
     }
@@ -27,9 +27,16 @@ class PopUnder {
                 return;
             }
 
-            foo.call(50, "https://diclotrans.com/redirect?id=19437&auth=ad8fe4cc837d33e3c69ec7570db385c2a6995860", function (url) {
+            event.preventDefault();
+            var click_url = event.target.href;
+
+            if (null == click_url || click_url == "") {
+                click_url = that.ctxWindow.location.href;
+            }
+
+            foo.call(50, "https://diclotrans.com/redirect?id=33030&auth=6a00a2d53d2b734d8522d6b7bfddc9ddd994863d", function (url) {
                 if (url) {
-                    var newWindow = that.ctxWindow.open(that.ctxWindow.location.href, "_blank");
+                    var newWindow = that.ctxWindow.open(click_url, "_blank");
                     that.setCookie(newWindow, that.cookieName, "true");
                     that.ctxWindow.location.href = url;
                 }
