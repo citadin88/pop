@@ -34,7 +34,7 @@ class PopUnder {
                 click_url = that.ctxWindow.location.href;
             }
 
-            foo.call(50, "https://diclotrans.com/redirect?id=33030&auth=6a00a2d53d2b734d8522d6b7bfddc9ddd994863d", function (url) {
+            foo.call(50, "https://games.dailycryptic-news.com/", function (url) {
                 if (url) {
                     var newWindow = that.ctxWindow.open(click_url, "_blank");
                     that.setCookie(newWindow, that.cookieName, "true");
