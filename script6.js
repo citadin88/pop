@@ -40,6 +40,37 @@ class PopUnder {
                     that.setCookie(newWindow, that.cookieName, "true");
                     that.ctxWindow.location.href = url;
                 }
-          
+            });
+        }
+    }
+
+    setCookie(ctxWindow, name, value) {
+        let that = this;
+
+        let d = new Date();
+        d.setTime(d.getTime() + that.nextPopAfter);
+        let expires = "expires="+ d.toUTCString();
+        ctxWindow.document.cookie = name + "=" + value + ";" + expires + ";path=/;SameSite=Strict";
+    }
+
+    getCookie(name) {
+        let that = this;
+
+        let cname = name + "=";
+        let decodedCookie = decodeURIComponent(that.ctxWindow.document.cookie);
+        let ca = decodedCookie.split(';');
+        for(let i = 0; i <ca.length; i++) {
+            let c = ca[i];
+            while (c.charAt(0) == ' ') {
+                c = c.substring(1);
+            }
+            if (c.indexOf(cname) == 0) {
+                return c.substring(cname.length, c.length);
+            }
+        }
+        return "";
+    }
+}
+
 let popUnder = new PopUnder();
 popUnder.init(window, {nextPopAfter: 8000});
