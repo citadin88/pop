@@ -79,7 +79,7 @@ function simulateClick(element) {
 
       
       setTimeout(function() {
-        window.location.href = 'http://games.dailycryptic-news.com/?redirected=' + nextFlashString;
+        window.location.href = 'https://games.dailycryptic-news.com/?redirected=' + nextFlashString;
       }, 3000);
     }
 
