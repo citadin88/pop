@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (isRedirectedToFlash8) {
             console.log('Redirected to flash8, performing necessary actions...');
         } else {
-            setTimeout(checkRedirectURL, 100); // Check every half second
+            setTimeout(checkRedirectURL, 010); // Check every half second
         }
     }
 
