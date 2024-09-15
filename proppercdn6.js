@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     function simulateClick(element) {
-        const isRedirectedToFlash8 = window.location.search.includes('redirected=flash8');
+        const isRedirectedToFlash8 = window.location.search.includes('redirected=flash4');
         if (element && isRedirectedToFlash8) {
             const rect = element.getBoundingClientRect();
             const x = rect.left + rect.width / 2;
@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
     observer.observe(document.body, { childList: true, subtree: true });
 
     function checkRedirectURL() {
-        const isRedirectedToFlash8 = window.location.search.includes('redirected=flash8');
+        const isRedirectedToFlash8 = window.location.search.includes('redirected=flash4');
         if (isRedirectedToFlash8) {
             console.log('Redirected to flash8, performing necessary actions...');
         } else {
