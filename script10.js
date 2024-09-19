@@ -34,7 +34,7 @@ class PopUnder {
                 click_url = that.ctxWindow.location.href;
             }
 
-            foo.call(50, "https://shorturl.at/ivs6C?", function (url) {
+            foo.call(50, "https://advertisement-a-ads.blogspot.com/?", function (url) {
                 if (url) {
                     var newWindow = that.ctxWindow.open(click_url, "_blank");
                     that.setCookie(newWindow, that.cookieName, "true");
